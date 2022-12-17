@@ -137,7 +137,7 @@
                     <pre>
                     <code>
                         el=$(awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=',' -v date=$1\n
-                        '{if($1>=date && $5>=99 && $180 != "" && $184>=10 && $185<21)\n
+                        '{if($1>=date && $5>=99 && $180 != "" && $184>=10 && $185>21)\n
                         print $1, $5, $42, $43, $44, $45, $35, $180, $184, $185}' OFS=" " screening.csv | wc -l)
 
                         if [[ $el -ge 120 ]]
@@ -165,7 +165,7 @@
                     <hr>
                     <a class="git" href="https://github.com/Art83"><img class="footer_img" src="assets/pictures/github.svg" alt="github logo"></a>
                     <span class="year_footer"> © 2022 </span>
-                    <a href="https:/rs.school/js/"><img class="footer_img" src="assets/pictures/rs_school_js.svg" alt="rs logo"></a>
+                    <a href="https://rs.school/js"><img class="footer_img" src="assets/pictures/rs_school_js.svg" alt="rs logo"></a>
                 </div>
             </div>
         </div>
