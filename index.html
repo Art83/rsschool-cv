@@ -11,21 +11,21 @@
 <body>
     <div class="centered_block">
         <div class="upper_band">
-            <section class="photo">
+            <div class="photo">
                 <img src="assets/pictures/avatar.jpg" alt="personal photo here">
-            </section>
+            </div>
             <section class="intro">
                 <h1>ARTUR SHVETCOV</h1>
                 <p class="intro_p">DATA SCIENTIST </p>
                 <p class = "intro_p">Sydney, Australia</p>
             </section>
-            <section class="info">
+            <div class="info">
                 <ul>
                     <li><i class="fa-solid fa-mobile-screen"></i> 0422-XXX-XXX</li>
                     <li><i class="fa-regular fa-envelope"></i> a.shvetcov@unsw.edu.au</li>
                     <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/artur-shvetcov-13957366/">www.linkedin.com/Artur</a></li>
                 </ul>
-            </section>
+            </div>
             <div class="row"></div>
             <nav class="navig">
                 <ul class="contacts">
@@ -39,15 +39,16 @@
                 </ul>
             </nav>
             <div class="edu_skills">
-                <div class="profile" id="prof">
+                <section class="profile" id="prof">
                     <h2> Profile </h2>
                     <hr>
-                    <article class="profile_text">I completed my first PhD in Biology in 2010 and followed this up with several years as both a
+                    <div class="profile_text">I completed my first PhD in Biology in 2010 and followed this up with several years as both a
                         postdoctoral fellow and senior researcher focusing on neural epigenetics and neurotoxicology. I then spent two years as a researcher examining data generated from clinical trials.
                         Here, I developed a passion for data science and subsequently pursued Graduate Diplomas in Data Analysis and Software Development as well as a Master's degree in Bioinformatics (2019)
                         where I focused on predictive models using artificial neural networks. Currently, my primary goal is mastering front-end development since it has been proven essential
-                        for some of the data science applications I worked on.  </article>
-                </div>
+                        for some of the data science applications I worked on.
+                    </div>
+                </section>
             <div class="edu" id="ed">
                 <h2>Education</h2>
                 <hr>
@@ -82,7 +83,7 @@
                 <div class="skills_stack" id="skill">
                     <h2> Skills & Tech Stack</h2>
                     <hr>
-                    <section class="skills">
+                    <div class="skills">
                             <ul>
                                 <li>Data management and verification</li>
                                 <li>ETL pipelines</li>
@@ -91,8 +92,8 @@
                                 <li>Big Data</li>
                                 <li>Excellent communication skills</li>
                             </ul>
-                    </section>
-                    <section class="tech_stack">
+                    </div>
+                    <div class="tech_stack">
                         <ul>
                             <li>Python</li>
                             <li>Bash</li>
@@ -101,7 +102,7 @@
                             <li>SQL</li>
                             <li> Cloud services such as Amazon and GCP</li>
                         </ul>
-                    </section>
+                    </div>
                     <div class="row"></div>
                 </div>
                 <div class="Work_experience" id="Work">
@@ -136,7 +137,7 @@
                     <pre>
                     <code>
                         el=$(awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=',' -v date=$1\n
-                        '{if($1>=date && $5 >= 99 && $180 != "" && $184 >= 10 && $185 < 21)\n
+                        '{if($1>=date && $5>=99 && $180 != "" && $184>=10 && $185>21)\n
                         print $1, $5, $42, $43, $44, $45, $35, $180, $184, $185}' OFS=" " screening.csv | wc -l)
 
                         if [[ $el -ge 120 ]]
@@ -164,7 +165,7 @@
                     <hr>
                     <a class="git" href="https://github.com/Art83"><img class="footer_img" src="assets/pictures/github.svg" alt="github logo"></a>
                     <span class="year_footer"> © 2022 </span>
-                    <a href="https:/rs.school/js"><img class="footer_img" src="assets/pictures/rs_school_js.svg" alt="rs logo"></a>
+                    <a href="https://rs.school/js"><img class="footer_img" src="assets/pictures/rs_school_js.svg" alt="rs logo"></a>
                 </div>
             </div>
         </div>
